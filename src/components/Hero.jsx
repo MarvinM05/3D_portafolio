@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
 
 import { styles } from '../styles'
-import { ComputersCanvas } from './canvas'
+import { ComputersCanvas, StarsCanvas } from './canvas'
 
 
 const Hero = () => {
@@ -21,7 +21,9 @@ const Hero = () => {
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>I develop 3D visual, user <br className='sm:block hidden'/>interfaces and web applications.</p>
         </div>
       </div>
-
+      
+      <StarsCanvas />
+      
       <ComputersCanvas />
       
       <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
