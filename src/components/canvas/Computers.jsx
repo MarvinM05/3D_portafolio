@@ -19,12 +19,14 @@ const Computers = ({isMobile}) => {
         castShadow
         shadow-mapSize={1024}
       />
-      <primitive
-        object={computer.scene}
-        scale={isMobile ? "" : 0.55}
-        position={isMobile ? [-1, -0.5, -1] : [1.5, -1.5, -1]}
-        rotation={[0.08, 0.8, -0.1]}
-      />
+      {isMobile ? null : (
+        <primitive
+          object={computer.scene}
+          scale={0.55}
+          position={[1.5, -1.5, -1]}
+          rotation={[0.08, 0.8, -0.1]}
+        />
+      )}
     </mesh>
   );
 };
