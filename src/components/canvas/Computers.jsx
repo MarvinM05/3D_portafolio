@@ -50,29 +50,27 @@ const ComputersCanvas = () => {
   }, [])
 
   return (
-    <div className="w-full h-auto absolute inset-0 z-10">
-      <Canvas
-        frameloop="demand"
-        shadows
-        camera={{
-          position: [20, 3, 5],
-          fov: 25,
-        }}
-        gl={{ preserveDrawingBuffer: true }}
-      >
-        <Suspense fallback={<CanvasLoader />}>
-          <OrbitControls
-            autoRotate={true}
-            autoRotateSpeed={-0.5}
-            enableZoom={false}
-            maxPolarAngle={Math.PI / 2}
-            minPolarAngle={Math.PI / 2}
-          />
-          <Computers isMobile={isMobile} />
-        </Suspense>
-        <Preload all />
-      </Canvas>
-    </div>
+    <Canvas
+      frameloop="demand"
+      shadows
+      camera={{
+        position: [20, 3, 5],
+        fov: 25,
+      }}
+      gl={{ preserveDrawingBuffer: true }}
+    >
+      <Suspense fallback={<CanvasLoader />}>
+        <OrbitControls
+          autoRotate={true}
+          autoRotateSpeed={-0.5}
+          enableZoom={false}
+          maxPolarAngle={Math.PI / 2}
+          minPolarAngle={Math.PI / 2}
+        />
+        <Computers isMobile={isMobile} />
+      </Suspense>
+      <Preload all />
+    </Canvas>
   );
 }
 export default ComputersCanvas;
