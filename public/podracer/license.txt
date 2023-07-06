@@ -1,0 +1,11 @@
+Model Information:
+* title:	Star Wars PodRacer
+* source:	https://sketchfab.com/3d-models/star-wars-podracer-fe6c365dc34e40e4aca1f6c3c515b164
+* author:	UnSweet (https://sketchfab.com/unsweet)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Star Wars PodRacer" (https://sketchfab.com/3d-models/star-wars-podracer-fe6c365dc34e40e4aca1f6c3c515b164) by UnSweet (https://sketchfab.com/unsweet) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
