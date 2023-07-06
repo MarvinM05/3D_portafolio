@@ -79,28 +79,12 @@ const technologies = [
     icon: redux,
   },
   {
-    name: "Tailwind CSS",
-    icon: tailwind,
-  },
-  {
-    name: "PostgreSQL",
-    icon: postgreSQL,
-  },
-  {
     name: "Node JS",
     icon: nodejs,
   },
   {
     name: "Three JS",
     icon: threejs,
-  },
-  {
-    name: "git",
-    icon: git,
-  },
-  {
-    name: "figma",
-    icon: figma,
   }
 ];
 
