@@ -8,7 +8,7 @@ import CanvasLoader from '../Loader'
 const Stars = (props) => {
   const ref = useRef();
   const [sphere] = useState(() =>
-    random.inSphere(new Float32Array(1200), { radius: 1.2 })
+    random.inSphere(new Float32Array(1000), { radius: 1.2 })
   );
 
 
