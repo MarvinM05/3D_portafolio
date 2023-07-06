@@ -1,4 +1,4 @@
-import { useState, useRef } from 'react'
+import { useState, useRef, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import emailjs from '@emailjs/browser'
 
@@ -8,6 +8,25 @@ import { SectionWrapper } from '../hoc'
 import { slideIn } from '../utils/motion'
 
 const Contact = () => {
+
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(max-width: 500px)");
+
+    setIsMobile(mediaQuery.matches);
+
+    const handleMediaQueryChange = (e) => {
+      setIsMobile(e.matches);
+    };
+
+    mediaQuery.addEventListener("change", handleMediaQueryChange);
+
+    return () => {
+      mediaQuery.removeEventListener("change", handleMediaQueryChange);
+    };
+  }, []);
+
   const formRef = useRef();
 
   const [form, setForm] = useState({
@@ -80,7 +99,7 @@ const Contact = () => {
 
       <motion.div variants={slideIn("right", "tween", 0.2, 1)}
         className='xl:flex-1 xl:h-auto md:h-[550px] h-[350px]'>
-        <EarthCanvas/>
+        {!isMobile && <EarthCanvas />}
       </motion.div>
     </div>
   );
