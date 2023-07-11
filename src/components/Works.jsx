@@ -20,7 +20,7 @@ const ProjectCard = ({
       variants={fadeIn("up", "spring", index * 0.5, 0.75)}
       initial="hidden"
       whileInView={"show"}
-      viewport={{ once: true, amount: 0.7 }}
+      viewport={{ once: true, amount: 0.75 }}
     >
       <Tilt
         options={{
@@ -78,7 +78,7 @@ const Works = () => {
         variants={textVariant()}
         initial="hidden"
         whileInView={"show"}
-        viewport={{ once: true, amount: 0.7 }}
+        viewport={{ once: true, amount: 0.75 }}
       >
         <p className={`${styles.sectionSubText} `}>My work</p>
         <h2 className={`${styles.sectionHeadText}`}>Projects</h2>
@@ -89,7 +89,7 @@ const Works = () => {
           variants={fadeIn("", "", 0.1, 1)}
           initial="hidden"
           whileInView={"show"}
-          viewport={{ once: true, amount: 0.7 }}
+          viewport={{ once: true, amount: 0.75 }}
           className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
         >
           Following projects showcases my skills and experience through

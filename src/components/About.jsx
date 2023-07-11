@@ -27,7 +27,7 @@ const ServiceCard = ({index, title, icon}) => {
         className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card"
         initial='hidden'
         whileInView={"show"}
-        viewport={{ once: true, amount: 0.7 }}
+        viewport={{ once: true, amount: 0.75 }}
       >
         <div
           className="bg-tertiary rounded-[20px]
