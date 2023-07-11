@@ -21,13 +21,13 @@ const defOptions = {
 
 const ServiceCard = ({index, title, icon}) => {
   return (
-    <Tilt className="xs:w-[250px] w-full duration-150" options={defOptions}>
+    <Tilt className="xs:w-[250px] w-full duration-150">
       <motion.div
-        variants={fadeIn("right", "spring", 0.5 * index, 0.75)}
+        variants={fadeIn("right", "spring", index * 0.5, 0.75)}
         className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card"
-        initial='hidden'
+        initial="hidden"
         whileInView={"show"}
-        viewport={{ once: true, amount: 0.75 }}
+        viewport={{ once: true}}
       >
         <div
           className="bg-tertiary rounded-[20px]
@@ -52,7 +52,7 @@ const About = () => {
         variants={textVariant()}
         initial="hidden"
         whileInView={"show"}
-        viewport={{ once: true, amount: 0.7 }}
+        viewport={{ once: true, amount: 0.75 }}
       >
         <p className={styles.sectionSubText}>Introduction</p>
 
@@ -64,7 +64,7 @@ const About = () => {
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
         initial="hidden"
         whileInView={"show"}
-        viewport={{ once: true, amount: 0.7 }}
+        viewport={{ once: true, amount: 0.75 }}
       >
         I'm a skilled web developer with experience in
         JavaScript, and expertise in frameworks like React, Node.js, and
