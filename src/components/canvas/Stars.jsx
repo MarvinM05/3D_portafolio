@@ -8,7 +8,7 @@ import CanvasLoader from '../Loader'
 const Stars = (props) => {
   const ref = useRef();
   const [sphere] = useState(() =>
-    random.inSphere(new Float32Array(1000), { radius: 1.2 })
+  random.inSphere(new Float32Array(1000), { radius: 1.2 })
   );
 
 
@@ -24,7 +24,12 @@ useFrame((state, delta) => {
   return (
     // eslint-disable-next-line react/no-unknown-property
     <group rotation={[0, 0, Math.PI / 4]}>
-      <Points ref={ref} positions={sphere} stride={3} {...props}>
+      <Points
+        ref={ref}
+        positions={sphere}
+        stride={3}
+        {...props}
+      >
         <PointMaterial
           transparent
           color="#f272c8" // Set a bright color
