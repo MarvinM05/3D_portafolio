@@ -178,7 +178,7 @@ const projects = [
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "redux",
         color: "green-text-gradient",
       },
       {
@@ -195,15 +195,15 @@ const projects = [
       "The ultimate convenience of online shopping with our user-friendly e-commerce platform. Browse through a collection of products across various categories.",
     tags: [
       {
-        name: "react",
+        name: "HTML",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "CSS",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "javascript",
         color: "pink-text-gradient",
       },
     ],
