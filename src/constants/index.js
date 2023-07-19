@@ -21,6 +21,8 @@ import {
   tripguide,
   threejs,
   academlo,
+  weather,
+  eCommerce
 } from "../assets";
 
 export const navLinks = [
@@ -167,9 +169,9 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Weather App",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Weather App, your go-to source for accurate and up-to-date weather information! Check weather conditions for any location, near or far, user-friendly interface.",
     tags: [
       {
         name: "react",
@@ -184,13 +186,13 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: weather,
+    source_code_link: "https://weatherappmarvin.netlify.app/",
   },
   {
-    name: "Job IT",
+    name: "E-commerce",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "The ultimate convenience of online shopping with our user-friendly e-commerce platform. Browse through a collection of products across various categories.",
     tags: [
       {
         name: "react",
@@ -205,8 +207,8 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: eCommerce,
+    source_code_link: "https://e-commerce-marvin-vanilla.netlify.app/",
   },
   {
     name: "Trip Guide",

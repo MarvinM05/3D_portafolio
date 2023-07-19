@@ -31,6 +31,8 @@ import academlo from "./company/academlo.svg";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import weather from "./weather.jpg";
+import eCommerce from "./ecommerce.jpg"
 
 export {
   postgreSQL,
@@ -63,4 +65,6 @@ export {
   jobit,
   tripguide,
   academlo,
+  weather, 
+  eCommerce
 };

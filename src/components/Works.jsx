@@ -20,7 +20,7 @@ const ProjectCard = ({
       variants={fadeIn("up", "spring", index * 0.5, 0.75)}
       initial="hidden"
       whileInView={"show"}
-      viewport={{ once: true}}
+      viewport={{ once: true }}
     >
       <Tilt
         options={{
@@ -30,11 +30,11 @@ const ProjectCard = ({
         }}
         className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full duration-150"
       >
-        <div className="relative w-full h-[230px]">
+        <div className="relative w-full max-h-[230px] overflow-hidden rounded-2xl">
           <img
             src={image}
             alt="project_image"
-            className="w-full h-full object-cover rounded-2xl"
+            className="w-full h-full min-h-[230px] object-cover rounded-2xl"
           />
 
           <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
