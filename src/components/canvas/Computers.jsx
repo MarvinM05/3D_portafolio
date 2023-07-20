@@ -29,6 +29,8 @@ const Computers = () => {
   );
 };
 
+
+
 const ComputersCanvas = () => {
 
   return (
