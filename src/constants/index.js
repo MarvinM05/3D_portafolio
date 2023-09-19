@@ -190,7 +190,7 @@ const projects = [
     image: weather,
     source_code_link: "https://weatherappmarvin.netlify.app/",
   },
-    {
+  {
     name: "SocialDev",
     description:
       "A simple platform for developers to showcase their work, connect with peers, and collaborate. Join us and let's build together, you'll find a welcoming community!",
@@ -209,7 +209,7 @@ const projects = [
       },
     ],
     image: fullStack,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://social-full-stack.vercel.app/",
   },
   {
     name: "E-commerce",
