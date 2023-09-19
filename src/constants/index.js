@@ -22,7 +22,8 @@ import {
   threejs,
   academlo,
   weather,
-  eCommerce
+  eCommerce,
+  fullStack
 } from "../assets";
 
 export const navLinks = [
@@ -189,6 +190,27 @@ const projects = [
     image: weather,
     source_code_link: "https://weatherappmarvin.netlify.app/",
   },
+    {
+    name: "SocialDev",
+    description:
+      "A simple platform for developers to showcase their work, connect with peers, and collaborate. Join us and let's build together, you'll find a welcoming community!",
+    tags: [
+      {
+        name: "React",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Node.js",
+        color: "green-text-gradient",
+      },
+      {
+        name: "MongoDB",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: fullStack,
+    source_code_link: "https://github.com/",
+  },
   {
     name: "E-commerce",
     description:
@@ -209,27 +231,6 @@ const projects = [
     ],
     image: eCommerce,
     source_code_link: "https://e-commerce-marvin-vanilla.netlify.app/",
-  },
-  {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
   },
 ];
 

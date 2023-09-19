@@ -30,11 +30,11 @@ const ProjectCard = ({
         }}
         className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full duration-150"
       >
-        <div className="relative w-full max-h-[230px] overflow-hidden rounded-2xl">
+        <div className="relative w-full min-h-[240px] max-h-[250px] overflow-hidden rounded-2xl">
           <img
             src={image}
             alt="project_image"
-            className="w-full h-full min-h-[230px] object-cover rounded-2xl"
+            className="w-full h-full min-h-[230px] max-h-1 object-cover rounded-2xl"
           />
 
           <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
@@ -109,4 +109,4 @@ const Works = () => {
   );
 };
 
-export default SectionWrapper(Works, "");
+export default SectionWrapper(Works, "work");

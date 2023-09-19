@@ -33,6 +33,7 @@ import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 import weather from "./weather.jpg";
 import eCommerce from "./ecommerce.jpg"
+import fullStack from "./fullStack.png";
 
 export {
   postgreSQL,
@@ -65,6 +66,7 @@ export {
   jobit,
   tripguide,
   academlo,
-  weather, 
-  eCommerce
+  weather,
+  eCommerce,
+  fullStack,
 };
